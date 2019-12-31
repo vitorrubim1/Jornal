@@ -1,17 +1,26 @@
+                                        /*INDEX*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-                                        /*INDEX*/
-#textarea{
-    border-color: #007bff!important;
-    position: relative;
-    margin-top:15px !important;
-    width: 1000px;
-    margin-left: 27px;
-    display: grid;
+li{
+    text-decoration: none;
+    list-style-type: none;
 }
+
+                                        /*NOTÍCIAS*/
+textarea{
+    border: 0.5px solid #007bff;
+    position: relative;
+    left: 2%;
+    height: auto;
+    width: 120%;
+    color:#16181a;
+    padding: 5px;
+
+}
+
 h6, h2{
     margin-left: 27px;
 
@@ -21,26 +30,46 @@ h6, h2{
     border-radius: 7px;
     -webkit-box-shadow: 1px 0px 14px -5px rgba(0,0,0,0.73); 
     box-shadow: 1px 0px 14px -5px rgba(0,0,0,0.73);
-    width: 95%;
+    width: 70%;
     margin-top:22px !important;
-    margin-left: 15px;
+    margin-left: 10%;
+    display:table;
 
 }
 #card{
-    top:15px !important;
-    width: 1000px;
-    margin-left: 27px;
+    top:10px !important;
+    width: 85%;
+    margin-left: 7%;
     display: grid;
     position: relative;
+    height:auto !important; /*para se adaptar ao tamanho da div pai #noticias*/
+}
+small {
+    float: inline-end; /*para flutuar no lado final do seu bloco,*/
 }
 #btnComentar{
     position: relative;
-    left: 930px;
+    left: 880px;
     top:-10px;
 }
+#btnAtualizar{
+    position: relative;
+    left: 1025px;
+    top:-10px;
+}
+#btnVoltar{
+    position: relative;
+    left: 900px;
+    top:-48px;
+}
+
+#Login{
+    cursor: pointer;
+}
 img{
-    height: 100%;
+    height: 95%;
     width: 100%;
+    clear: both;
 }
 .clear{
     clear: both;
@@ -51,13 +80,20 @@ img{
     top: 8px;
     left: 27px;
 }
+.btnscoment{
+    width: 70%;
+    position: relative;
+    left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
                 /***************************************************/
 
                                         /*CADASTRO*/
 .fundo{
     width: 50%;
-    height: 650px;
-    margin-top: 50px;
+    height: 585px;
+    margin-top: 20px;
     margin-left: 250px;
     border: solid 1px #ccc;
     border-radius: 30px;
@@ -66,6 +102,9 @@ img{
     -moz-box-shadow: 7px 10px 18px -1px rgba(181, 172, 181, 0.48);
     box-shadow: 7px 10px 18px -1px rgba(181, 172, 181, 0.48);
 }
+a{
+    width:100px;
+}
 
 label{
     font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -73,3 +112,93 @@ label{
 }
 
                 /***************************************************/
+
+                                        /*FOOTER*/
+.footer{
+    background-color: #f2f2f2;
+    height: 240px;
+    width:100%;
+    bottom:0;
+    left:0;
+    margin-top: 100px;
+}
+
+.footer2{
+/*para centralizar tudo*/
+    position:absolute;
+    display: flex;
+    margin-left: 40%;
+   
+}
+.facebook{
+    height: 25px; width: 25px; position:relative; left: -20px; top:35px;
+    background-image: url(../img/logoFacebook.png);
+    background-size: 100%; border-radius: 20px;
+}
+.instagram{
+    height: 25px; width: 25px; position:relative; left: -20px; top:30px;
+    background-image: url(../img/logoInstagram.png);
+    background-size: 100%; border-radius: 20px;
+}
+.github{
+    height: 25px; width: 25px; position:relative; left: -20px; top:35px;
+    background-image: url(../img/gitHub.png);
+    background-size: 100%; border-radius: 20px;
+    
+}
+.col{
+    left: 12%;
+    margin-top:-15%;
+    position: relative;    
+}
+
+                /***************************************************/
+
+                                        /*COMENTARIO*/
+
+.comentario{
+    position: relative;
+    width: 67%;
+    height: 150px;
+    overflow: hidden;
+    margin-left:11.5%;
+    top: 20px;
+    -webkit-box-shadow: 1px 0px 14px -5px rgba(0,0,0,0.73); 
+    box-shadow: 1px 0px 14px -5px rgba(0,0,0,0.73);
+    display:table; /*ISSO SE ESTENDE ATÉ O CLEAR BOTH*/
+}
+.fotoComentario{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    float: left;
+    overflow: hidden;
+}
+.titulo{
+    margin: 10px;
+    min-height: 15px;
+    color: #007bff;
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+.mensagem{
+    color: #34495e;
+    margin: 15px;
+}
+
+
+                /***************************************************/
+
+.olho {
+  cursor: pointer;
+  left: 230px;
+  position: absolute;
+  width: 12%;
+  height: 35%;
+  top: 33px;
+}
+
+#imagemUpdate{
+    width: 25%;
+    margin-left:400px
+}
